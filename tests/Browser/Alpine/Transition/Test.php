@@ -95,7 +95,7 @@ class Test extends TestCase
             ->assertScript('document.querySelector(\'[dusk="inner"]\').style.display', '')
             ->assertScript('document.querySelector(\'[dusk="inner"]\').style.opacity', '0')
             ->click('@'.$secondHook)
-            ->pause(100)
+            ->pause(150)
             ->assertScript('document.querySelector(\'[dusk="outer"]\').style.display', '')
             ->assertScript('document.querySelector(\'[dusk="inner"]\').style.display', '')
             ->assertScript('document.querySelector(\'[dusk="inner"]\').style.opacity', '1')
